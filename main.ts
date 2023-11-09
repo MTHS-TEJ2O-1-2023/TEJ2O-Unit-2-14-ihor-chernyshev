@@ -10,9 +10,8 @@ let sprite: game.LedSprite = null
 let loopCounter = 0
 
 // setup
-basic.showIcon(IconNames.Happy)
-basic.pause(500)
 basic.clearScreen()
+basic.showIcon(IconNames.Happy)
 
 // press "A" button
 input.onButtonPressed(Button.A, function () {
