@@ -2,7 +2,7 @@
  *
  * Created by: Ihor Chernyshev
  * Created on: Nov 2023
- * This program ...
+ * This program shows a while loop
 */
 
 // variables
