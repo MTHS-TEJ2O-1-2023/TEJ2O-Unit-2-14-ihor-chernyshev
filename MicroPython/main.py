@@ -9,10 +9,11 @@ from microbit import *
 
 # variables
 loop_counter = 0
+variable1 = 1
 
 # setup
-display.show(Image.HAPPY)
 display.clear()
+display.show(Image.HAPPY)
 
 while True:
     # button A
@@ -23,7 +24,9 @@ while True:
         while loop_counter <= 5:
             sleep(500)
             display.set_pixel(loop_counter, loop_counter, 9)
+            display.set_pixel(variable1, variable1, 0)
             loop_counter = loop_counter + 1
+            variable1 = variable1 + 1
         display.show(Image.HAPPY)
     # button B
     if button_b.was_pressed():
@@ -33,5 +36,6 @@ while True:
         while loop_counter <= 5:
             sleep(500)
             display.set_pixel(loop_counter, loop_counter, 9)
+            display.set_pixel(loop_counter + 1, loop_counter + 1, 0)
             loop_counter = loop_counter - 1
         display.show(Image.HAPPY)
