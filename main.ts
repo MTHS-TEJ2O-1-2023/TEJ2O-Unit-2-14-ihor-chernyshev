@@ -19,6 +19,7 @@ input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   loopCounter = 0
   sprite = game.createSprite(0, 0)
+  // goes from the upper left corner to lower right corner
   while (loopCounter <= 5) {
     basic.pause(500)
     sprite.set(LedSpriteProperty.X, loopCounter)
@@ -34,6 +35,7 @@ input.onButtonPressed(Button.B, function () {
   basic.clearScreen()
   loopCounter = 5
   sprite = game.createSprite(5, 5)
+  // goes from the lower right corner to the upper left corner
   while (loopCounter >= -1) {
     basic.pause(500)
     sprite.set(LedSpriteProperty.X, loopCounter)
